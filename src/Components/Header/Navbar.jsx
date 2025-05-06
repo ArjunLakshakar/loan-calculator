@@ -11,7 +11,7 @@ export const Navbar = () => {
     }, [darkMode]);
 
     return (
-        <nav className="p-4 shadow-md transition duration-300
+        <nav className="p-4 shadow-md transition duration-300 fixed top-0 left-0 w-full z-10 
         bg-gradient-to-r dark:from-gray-700 dark:via-gray-800 dark:to-gray-900
         from-[#2d2a5a] via-[#312e81] to-[#3730a3] dark:text-white">
 

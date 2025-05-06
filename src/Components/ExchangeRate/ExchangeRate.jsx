@@ -47,8 +47,8 @@ export const ExchangeRate = () => {
         });
 
     return (
-        <div className="bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe]
-dark:bg-gradient-to-r dark:from-gray-500 dark:via-gray-400 dark:to-gray-300 transition duration-300 ">
+        <div className="bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe] mt-16
+dark:bg-gradient-to-r dark:from-gray-600 dark:via-gray-400 dark:to-gray-600 transition duration-300 ">
 
             <div className="max-w-5xl mx-auto px-4 py-10 text-gray-800 dark:text-gray-100 ">
                 <div className="bg-white dark:bg-gray-600 shadow-xl rounded-2xl p-6 mb-10">

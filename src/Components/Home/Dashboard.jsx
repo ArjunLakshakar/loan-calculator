@@ -92,35 +92,35 @@ export const Dashboard = () => {
     };
 
     return (
-        <div className="bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe] min-h-screen dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-600 dark:to-gray-500 transition duration-300">
+        <div className="mt-16 bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe] min-h-screen dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 transition duration-300">
             <div className="max-w-6xl mx-auto px-4 py-10">
                 {/* Welcome Section */}
                 <section className="mb-10 text-center">
-                    <h1 className="text-4xl font-bold dark:text-blue-300 text-blue-800 mb-2">Welcome to Your Smart Loan Planner</h1>
-                    <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6">
+                    <h1 className="text-4xl font-bold dark:text-black text-blue-800 mb-2">Welcome to Your Smart Loan Planner</h1>
+                    <p className="text-gray-600 dark:text-gray-100 max-w-3xl mx-auto mb-6">
                         Quickly visualize your EMI, interest outflow, and repayment journey. No sign-up required. Get started below!
                     </p>
-                    <div className="flex flex-col sm:flex-row justify-center gap-6 dark:text-gray-400">
+                    <div className="flex flex-col sm:flex-row justify-center gap-6 dark:text-gray-100">
                         <div>
-                            <HiCurrencyDollar className="mx-auto dark:text-gray-400 text-blue-600 text-3xl mb-2" />
+                            <HiCurrencyDollar className="mx-auto dark:text-gray-50 text-blue-600 text-3xl mb-2" />
                             <p>Real-time EMI Calculation</p>
                         </div>
                         <div>
-                            <HiOutlineCalendar className="mx-auto dark:text-gray-400 text-blue-600 text-3xl mb-2" />
+                            <HiOutlineCalendar className="mx-auto dark:text-gray-50 text-blue-600 text-3xl mb-2" />
                             <p>Repayment Schedule</p>
                         </div>
                         <div>
-                            <MdOutlineFileDownload className="mx-auto dark:text-gray-400 text-blue-600 text-3xl mb-2" />
+                            <MdOutlineFileDownload className="mx-auto dark:text-gray-50 text-blue-600 text-3xl mb-2" />
                             <p>CSV Export Support</p>
                         </div>
                     </div>
                 </section>
 
-                <h2 className="text-3xl font-bold text-center text-blue-700 dark:text-blue-300 mb-6">
+                <h2 className="text-3xl font-bold text-center text-blue-700 dark:text-white mb-6">
                     Loan Calculator Dashboard
                 </h2>
 
-                <div className="bg-white shadow-md rounded-xl p-6 mb-6 dark:bg-slate-500">
+                <div className="bg-white shadow-md rounded-xl p-6 mb-6 dark:bg-slate-600">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div className="relative ">
                             <span className="absolute left-3 top-3 text-blue-500 pt-1">
@@ -162,7 +162,7 @@ export const Dashboard = () => {
                     <div className="text-center mt-6">
                         <button
                             onClick={calculateEMI}
-                            className="bg-blue-600 dark:bg-slate-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+                            className="bg-blue-600 dark:bg-slate-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
                         >
                             CALCULATE
                         </button>
@@ -186,13 +186,13 @@ export const Dashboard = () => {
                         <div className="flex gap-2">
                             <button
                                 onClick={reset}
-                                className="border border-gray-400 px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100"
+                                className="border border-gray-400 px-4 py-2 rounded-md dark:bg-white text-gray-700 hover:bg-gray-100"
                             >
                                 RESET
                             </button>
                             <button
                                 onClick={downloadCSV}
-                                className="flex items-center gap-1 border border-gray-400 px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100"
+                                className="flex items-center gap-1 border dark:bg-white border-gray-400 px-4 py-2 rounded-md text-gray-700 hover:bg-gray-100"
                             >
                                 <MdOutlineFileDownload className="text-xl" />
                                 EXPORT CSV
@@ -208,7 +208,7 @@ export const Dashboard = () => {
 
                 {emi && (
                     <>
-                        <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4 rounded-md">
+                        <div className="bg-green-100 dark:bg-green-200 border-l-4 border-green-500 text-green-700 p-4 mb-4 rounded-md">
                             <p className="text-lg font-semibold text-center">
                                 Monthly EMI: {formatCurrency(emi)}
                             </p>

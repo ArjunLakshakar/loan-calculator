@@ -2,11 +2,11 @@ import React from 'react';
 
 export const About = () => {
     return (
-        <div className="bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe]
-dark:bg-gradient-to-r dark:from-gray-500 dark:via-gray-300 dark:to-gray-300 min-h-screen py-10 px-4">
+        <div className="mt-16 bg-gradient-to-br from-[#ebf8ff] via-[#dbeafe] to-[#bfdbfe]
+dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-600 dark:to-gray-700 min-h-screen py-10 px-4">
             <div className="max-w-7xl mx-auto text-center">
-                <h1 className="text-5xl font-extrabold dark:text-gray-600 text-blue-800 mb-6">About Us</h1>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-10">
+                <h1 className="text-5xl font-extrabold dark:text-gray-50 text-blue-800 mb-6">About Us</h1>
+                <p className="text-lg dark:text-gray-200 max-w-3xl mx-auto mb-10">
                     Welcome to our currency and loan planning platform — where real-time accuracy meets simplicity.
                     Our mission is to provide fast, reliable, and user-friendly tools for currency conversion and loan planning with live data insights.
                 </p>
