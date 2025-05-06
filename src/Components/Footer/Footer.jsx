@@ -24,8 +24,8 @@ export const Footer = () => {
                 <div>
                     <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-2">Connect</h3>
                     <ul className="text-sm space-y-2">
-                        <li><a href="#" className="hover:underline">GitHub</a></li>
-                        <li><a href="#" className="hover:underline">LinkedIn</a></li>
+                        <li><a href="https://github.com/ArjunLakshakar/loan-calculator" className="hover:underline">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/arjun-lakshakar-31686b309/" className="hover:underline">LinkedIn</a></li>
                         <li><a href="#" className="hover:underline">Twitter</a></li>
                     </ul>
                 </div>
